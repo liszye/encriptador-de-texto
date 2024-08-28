@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --color-primaria: #000000;
+    --color-secundaria: #F6F6F6;
+    --color-terciaria: #22D4FD;
+    --color-hover: #272727;
+
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-primaria);
+    color: var(--color-secundaria);
+    font-family: var(--fuente-montserrat);
+}
+
+.container {
+    background-color: var(--color-secundaria);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+    margin: 50px auto;
+    color: var(--color-primaria);
+}
+
+h1 {
+    font-family: var(--fuente-krona);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--color-terciaria);
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-primaria);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    resize: none;
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem;
+    background-color: var(--color-secundaria);
+    color: var(--color-primaria);
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: var(--color-terciaria);
+    color: var(--color-secundaria);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: var(--color-hover);
+}
+
+#outputText {
+    background-color: var(--color-secundaria);
+    color: var(--color-primaria);
+}
+
+#copyButton {
+    background-color: var(--color-terciaria);
+    margin-top: 10px;
+}
+
+#copyButton:hover {
+    background-color: var(--color-hover);
+}
+
+.footer {
+    color: var(--color-primaria);
+    background-color: var(--color-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+        padding: 10%;
+    }
+    
+    .options {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    button {
+        width: 100%;
+    }
+}
